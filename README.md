@@ -8,7 +8,7 @@ This Flutter library aims to simplify the process of obtaining a unique identifi
 import 'package:device_id/device_id.dart';
 ```
 
-2. Call the 
+2. Call the method `uuid()` to get the device Id
 ```dart
 String deviceId = await DeviceId.uuid();
 ```
