@@ -12,7 +12,6 @@ public class DeviceIdPlugin: NSObject, FlutterPlugin {
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
         switch call.method {
         case "uuid":
-            print("Working")
             result(FCUUID.uuidForDevice() as String)
         default:
             result(FlutterMethodNotImplemented)
