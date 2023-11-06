@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -32,6 +33,9 @@ class _MyAppState extends State<MyApp> {
     try {
       deviceId =
           await DeviceId.uuid() ?? 'Unknown Device UUID';
+      if (kDebugMode) {
+        print("Device ID: $deviceId");
+      }
     } on PlatformException {
       deviceId = 'Failed to get Device UUID.';
     }
