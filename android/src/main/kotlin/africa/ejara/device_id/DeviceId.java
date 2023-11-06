@@ -16,8 +16,7 @@ public class DeviceId {
                 (Build.MANUFACTURER.length() % 10) +
                 (Build.MODEL.length() % 10) +
                 (Build.PRODUCT.length() % 10);
-        // UUID deviceUuid = new UUID(serial.hashCode(), devIdShort.hashCode());
-        // return formatUUID(deviceUuid.toString());
+
         return formatUUID(serial + devIdShort);
     }
 
