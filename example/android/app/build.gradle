@@ -26,6 +26,7 @@ apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
+    namespace 'africa.ejara.africa.ejara.device_id_example'
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
